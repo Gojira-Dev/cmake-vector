@@ -1,4 +1,0 @@
-C:/Users/Admin/Documents/projects/cmake-vector/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Admin/Documents/projects/cmake-vector/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Admin/Documents/projects/cmake-vector/build/main/CMakeFiles/VectorEx.dir
-C:/Users/Admin/Documents/projects/cmake-vector/build/lib/src/CMakeFiles/Vector.dir
