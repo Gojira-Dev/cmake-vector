@@ -1,7 +1,0 @@
-- Cual es la forma adecuada de retorno? variable, puntero, referencia? constante o no?
-    variable funciona, pero es eficiente?
-    debo implementar constructor de movimiento(&&)?
-- multiplicacion, dos lados. hay alguna forma mas elegante de conseguirla?
-- En la division entre escalar, como formateo el numero de decimales
-- en el input, demasiados analisis, demasiados recorridos transversales de la cadena, hay que condensarlo en uno
-- cuando usar iteradores?? for-range es mucho mas sencillo de utilizar, se ve mejor
