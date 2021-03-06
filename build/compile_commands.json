@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Admin/Documents/projects/cmake-vector/build/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/Main.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Main.dir\\main.cpp.obj -c C:\\Users\\Admin\\Documents\\projects\\cmake-vector\\src\\main.cpp",
+  "file": "C:/Users/Admin/Documents/projects/cmake-vector/src/main.cpp"
+},
+{
+  "directory": "C:/Users/Admin/Documents/projects/cmake-vector/build/src",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/Vector.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\Vector.dir\\Vector.cpp.obj -c C:\\Users\\Admin\\Documents\\projects\\cmake-vector\\src\\Vector.cpp",
+  "file": "C:/Users/Admin/Documents/projects/cmake-vector/src/Vector.cpp"
+}
+]

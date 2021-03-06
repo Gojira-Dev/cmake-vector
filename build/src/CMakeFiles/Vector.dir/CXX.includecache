@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Vector.h
+iostream
+-
+ostream
+-
+istream
+-
+sstream
+-
+string
+-
+cmath
+-
+
+C:/Users/Admin/Documents/projects/cmake-vector/src/Vector.cpp
+Vector.h
+C:/Users/Admin/Documents/projects/cmake-vector/src/Vector.h
+
