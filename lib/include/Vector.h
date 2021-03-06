@@ -18,28 +18,36 @@ public:
 
     // equality operations
 
-    bool operator==(const Vector& other);
-    bool operator!=(const Vector& other);
+    bool operator==(const Vector& other) const;
+    bool operator!=(const Vector& other) const;
 
     // arithmetic operations
 
-    Vector operator+(const Vector& other);
-    Vector operator-();
-    Vector operator-(const Vector& other);
+    Vector& operator+=(const Vector& other);
+    Vector operator-() const;
+    Vector& operator-=(const Vector& other);
+
+    Vector& operator*=(const double scalar);
+    double operator*(const Vector& vec); // dot product
 
     friend Vector operator*(const Vector& vec, const double scalar);
     friend Vector operator*(const double scalar, const Vector& vec);
 
-    Vector operator/(const double divisor);
+    Vector& operator/=(const double divisor);
+    friend Vector operator/(const Vector& vec, const double divisor);
+
 
     // streams
     friend std::ostream& operator<<(std::ostream& out, const Vector& vec);
     friend std::istream& operator>>(std::istream& in, Vector& vec);
 
     // vector operations
-    double dot(const Vector& vec) const;
     double length() const;
 
+    friend Vector operator+(const Vector& leftvec, const Vector& rightvec);
+
+    friend Vector operator-(const Vector& leftvec, const Vector& rightvec);
+    friend Vector operator/(const Vector& leftvec, const Vector& rightvec);
 
 private:
     double x;
@@ -55,3 +63,8 @@ extern Vector operator*(const double scalar, const Vector& vec);
 extern std::ostream& operator<<(std::ostream& out, const Vector& vec);
 
 extern std::istream& operator>>(std::istream& in,  Vector& vec);
+
+extern Vector operator+(const Vector& leftvec, const Vector& rightvec);
+extern Vector operator-(const Vector& leftvec, const Vector& rightvec);
+
+extern Vector operator/(const Vector& vec, const double divisor);
