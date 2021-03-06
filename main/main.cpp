@@ -10,17 +10,6 @@ using namespace std;
 int main()
 {
 
-    Vector a{1,2};
-    Vector b;
-    istringstream flux {"( 1.42 , 5)"};
-    flux >> b;
-
-    Vector c = a+b;
-
-    std::cout << c;
-
-
-
   Vector zero { };
   Vector e1 { 1.0, 0.0 };
   Vector e2 { 0.0, 1.0 };

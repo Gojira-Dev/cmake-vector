@@ -28,6 +28,15 @@ Vector Vector::operator-(const Vector& other){
         return Vector(x - other.x, y - other.y);
     }
 
+Vector Vector::operator/(const double divisor){
+        return Vector(x * (1/divisor), y * (1/divisor));
+    }
+double Vector::dot(const Vector& vec) const {
+    return (x * vec.x)+(y * vec.y);}
+
+double Vector::length() const { 
+    return std::sqrt((x * x) + (y * y)); }
+
 
 std::istream& operator>>(std::istream& in, Vector& vec){
     Vector temp;
@@ -42,6 +51,7 @@ std::istream& operator>>(std::istream& in, Vector& vec){
             in >> std::ws >> temp.y >> std::ws;
 
             if(in.peek() == ')'){
+                in.ignore(1);
                 vec = temp;
                 return in;
             }

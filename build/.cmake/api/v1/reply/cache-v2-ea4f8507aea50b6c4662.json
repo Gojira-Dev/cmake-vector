@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Vector"
+			"value" : "VectorProject"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1000,6 +1000,30 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "VectorProject_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/Documents/projects/cmake-vector/build"
+		},
+		{
+			"name" : "VectorProject_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Admin/Documents/projects/cmake-vector"
 		},
 		{
 			"name" : "Vector_BINARY_DIR",

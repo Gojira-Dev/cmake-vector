@@ -14,54 +14,31 @@ public:
     Vector(const double xx, const double yy):x(xx), y(yy){} // by-component constructor
     Vector(const Vector& other):x(other.x), y(other.y){}  // copy constructor
 
-    inline Vector operator=(const Vector& other);
+    Vector operator=(const Vector& other);
 
     // equality operations
 
-    inline bool operator==(const Vector& other);
-    inline bool operator!=(const Vector& other);
+    bool operator==(const Vector& other);
+    bool operator!=(const Vector& other);
 
     // arithmetic operations
 
-    inline Vector operator+(const Vector& other);
-    inline Vector operator-();
-    inline Vector operator-(const Vector& other);
+    Vector operator+(const Vector& other);
+    Vector operator-();
+    Vector operator-(const Vector& other);
 
-    // two sides multipliy
-    inline friend Vector operator*(const Vector& vec, const double scalar);
-    inline friend Vector operator*(const double scalar, const Vector& vec);
+    friend Vector operator*(const Vector& vec, const double scalar);
+    friend Vector operator*(const double scalar, const Vector& vec);
 
-    // division
-    Vector operator/(const double divisor){
-        return Vector(x * (1/divisor), y * (1/divisor));
-    }
+    Vector operator/(const double divisor);
 
     // streams
     friend std::ostream& operator<<(std::ostream& out, const Vector& vec);
-
     friend std::istream& operator>>(std::istream& in, Vector& vec);
 
-
-    // dot product
-
-    double dot(const Vector& vec) const {return (x * vec.x)+(y * vec.y);}
-
-    // length
-
-    double length() const { return std::sqrt((x * x) + (y * y)); }
-
-
-    // util
-
-    void print() {std::cout << x << " " << y << std::endl;}
-
-private:
-    //utils
-    std::string stripspaces(const std::string& str);
-
-    bool checkConditions(const std::string& str);
-
-    void setNumberFromString(const std::string& str);
+    // vector operations
+    double dot(const Vector& vec) const;
+    double length() const;
 
 
 private:
